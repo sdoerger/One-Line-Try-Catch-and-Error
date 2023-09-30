@@ -2,14 +2,14 @@ Certainly! Here's a sample README for your project, which includes the helper fu
 
 ---
 
-# Try Catch Helper util
+# Try Catch Helper Util
 
 This repository contains utility functions designed to make try catch and error-handling in Deno applications a tiny notch more easier and more convenient.
 Inspired my Go.
 
 ## Table of Contents
 
-- [Try Catch Helper util](#try-catch-helper-util)
+- [Try Catch Helper Util](#try-catch-helper-util)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
