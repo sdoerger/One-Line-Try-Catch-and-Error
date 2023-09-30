@@ -29,5 +29,3 @@ async function someFunctionThatMightThrow() {
 
 const [result, error] = await tryCatch(() => someFunctionThatMightThrow());
 assertError(error, 'Fuck');
-
-console.log(result);
