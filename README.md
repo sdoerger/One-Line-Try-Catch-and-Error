@@ -58,7 +58,6 @@ async function fetchAnimals() {
         }
     );
 
-    // In order to return data: ... 'cause retonio needs data :/
     return await response.json();
 };
 
@@ -66,7 +65,6 @@ const [result, error] = await tcUtils.tryCatch(fetchAnimals);
 tcUtils.assertError(error, 'An issue occurred');
 
 console.log(result);
-
 ```
 
 ### assertError
