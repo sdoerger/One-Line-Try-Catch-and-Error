@@ -5,7 +5,7 @@ Inspired my Go.
 
 ## Table of Contents
 
-- [Try Catch Helper Util](#try-catch-helper-util)
+- [One Line Try Catch and Error](#one-line-try-catch-and-error)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
@@ -33,13 +33,40 @@ The `tryCatch` function provides a way to execute asynchronous operations and ne
 
 #### Example:
 
+Basic
+
 ```typescript
-import * as tcUtils from 'https://raw.githubusercontent.com/sdoerger/tryAssert/main/mod.ts';
+import * as tcUtils from 'https://raw.githubusercontent.com/sdoerger/One-Line-Try-Catch-and-Error/main/mod.ts';
 
 const [result, error] = await tcUtils.tryCatch(() => 5 + 5);
 tcUtils.assertError(error, 'An issue occurred');
 
 console.log(result);
+```
+
+Async
+
+```typescript
+import * as tcUtils from 'https://raw.githubusercontent.com/sdoerger/One-Line-Try-Catch-and-Error/main/mod.ts';
+
+
+async function fetchAnimals() {
+    const response = await fetch(
+        "https://api.publicapis.org/entries?category=Animals",
+        {
+            method: "GET",
+        }
+    );
+
+    // In order to return data: ... 'cause retonio needs data :/
+    return await response.json();
+};
+
+const [result, error] = await tcUtils.tryCatch(fetchAnimals);
+tcUtils.assertError(error, 'An issue occurred');
+
+console.log(result);
+
 ```
 
 ### assertError
