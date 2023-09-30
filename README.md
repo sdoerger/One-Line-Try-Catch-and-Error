@@ -38,13 +38,12 @@ The `tryCatch` function provides a way to execute asynchronous operations and ne
 #### Example:
 
 ```typescript
-import * as tcUtils from 'https://github.com/sdoerger/tryAssert'
+import * as tcUtils from 'https://raw.githubusercontent.com/sdoerger/tryAssert/main/mod.ts';
 
-const [result, error] = await tcUtils.tryCatch(() => () => 5 + 5);
-tcUtils.assertError(error, 'Fuck');
+const [result, error] = await tcUtils.tryCatch(() => 5 + 5);
+tcUtils.assertError(error, 'An issue occurred');
 
-console.log(result);le.log("Success:", result);
-}
+console.log(result);
 ```
 
 ### assertError
