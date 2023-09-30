@@ -22,10 +22,3 @@ export function assertError(error: Error | null, message: string) {
     console.log(`${message}:`, error);
   }
 }
-
-async function someFunctionThatMightThrow() {
-  return 1 + 1
-}
-
-const [result, error] = await tryCatch(() => someFunctionThatMightThrow());
-assertError(error, 'Fuck');
