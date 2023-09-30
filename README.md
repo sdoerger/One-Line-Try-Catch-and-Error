@@ -1,4 +1,4 @@
-Certainly! Here's a sample README for your project, which includes the helper functions `tryCatch` and `logErrorIfExists`:
+Certainly! Here's a sample README for your project, which includes the helper functions `tryCatch` and `assertError`:
 
 ---
 
@@ -15,7 +15,7 @@ Inspired my Go.
   - [Usage](#usage)
     - [tryCatch](#trycatch)
       - [Example:](#example)
-    - [logErrorIfExists](#logerrorifexists)
+    - [assertError](#asserterror)
       - [Example:](#example-1)
   - [Running Tests](#running-tests)
   - [Contributing](#contributing)
@@ -38,27 +38,25 @@ The `tryCatch` function provides a way to execute asynchronous operations and ne
 #### Example:
 
 ```typescript
-import { tryCatch } from './helpers.ts';
+import * as tcUtils from 'https://github.com/sdoerger/tryAssert'
 
-const [result, error] = await tryCatch(async () => "Some Value");
+const [result, error] = await tcUtils.tryCatch(() => () => 5 + 5);
+tcUtils.assertError(error, 'Fuck');
 
-if (error) {
-  console.error("An error occurred:", error);
-} else {
-  console.log("Success:", result);
+console.log(result);le.log("Success:", result);
 }
 ```
 
-### logErrorIfExists
+### assertError
 
-The `logErrorIfExists` function logs an error message along with the error if it exists.
+The `assertError` function logs an error message along with the error if it exists.
 
 #### Example:
 
 ```typescript
-import { logErrorIfExists } from './helpers.ts';
+import { assertError } from './helpers.ts';
 
-logErrorIfExists(new Error("Some error"), "An error occurred");
+assertError(new Error("Some error"), "An error occurred");
 ```
 
 ## Running Tests
