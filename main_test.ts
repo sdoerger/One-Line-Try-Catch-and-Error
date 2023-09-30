@@ -1,5 +1,5 @@
 import { assertEquals } from "https://deno.land/std@0.203.0/assert/mod.ts";
-import { tryCatch } from "./mod.ts";
+import { tryCatch } from "./main.ts";
 
 Deno.test("tryCatch - successfully returns result", async () => {
   const [result, error] = await tryCatch(async () => "success");
