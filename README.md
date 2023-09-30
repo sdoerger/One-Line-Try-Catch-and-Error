@@ -2,19 +2,24 @@ Certainly! Here's a sample README for your project, which includes the helper fu
 
 ---
 
-# Async Helper Functions for Deno
+# Try Catch Helper util
 
-This repository contains utility functions designed to make error-handling in asynchronous Deno applications easier and more convenient.
+This repository contains utility functions designed to make try catch and error-handling in Deno applications a tiny notch more easier and more convenient.
+Inspired my Go.
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-  - [tryCatch](#tryCatch)
-  - [logErrorIfExists](#logerrorifexists)
-- [Running Tests](#running-tests)
-- [Contributing](#contributing)
-- [License](#license)
+- [Try Catch Helper util](#try-catch-helper-util)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [tryCatch](#trycatch)
+      - [Example:](#example)
+    - [logErrorIfExists](#logerrorifexists)
+      - [Example:](#example-1)
+  - [Running Tests](#running-tests)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ## Installation
 
