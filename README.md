@@ -1,8 +1,4 @@
-Certainly! Here's a sample README for your project, which includes the helper functions `tryCatch` and `assertError`:
-
----
-
-# Try Catch Helper Util
+# One Line Try Catch and Error
 
 This repository contains utility functions designed to make try catch and error-handling in Deno applications a tiny notch more easier and more convenient.
 Inspired my Go.
@@ -73,7 +69,3 @@ Feel free to contribute by submitting pull requests.
 ## License
 
 MIT License. See `LICENSE` for more information.
-
----
-
-This is just a sample README, so you might want to add more sections based on the actual content and structure of your project. Feel free to modify it as needed.
