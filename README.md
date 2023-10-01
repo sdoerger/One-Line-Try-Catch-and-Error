@@ -1,4 +1,6 @@
-# One Line Try Catch and Error
+<image src="https://cdn.midjourney.com/ba8ffbc1-2ea1-4ead-9d2f-337d23c2c037/0_0.png" width="400" height="400"
+
+# Try and Catch me if you can
 
 This repository contains utility functions designed to make try catch and error-handling in Deno applications a tiny notch more easier and more convenient.
 Inspired my Go.
