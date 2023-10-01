@@ -1,6 +1,11 @@
-<image src="https://cdn.midjourney.com/ba8ffbc1-2ea1-4ead-9d2f-337d23c2c037/0_0.png" width="400" height="400" />
+<p align="center">
+  <a href="https://npmjs.com/package/retonio" target="_blank" rel="noopener noreferrer">
+    <img width="230" src="https://ik.imagekit.io/vrfrbvdn0j/sddev/TryCatchFin-A-OneLiner.svg?updatedAt=1696163155296" alt="TryCatchFin A OneLiner logo">
+  </a>
+</p>
+<br/>
 
-# Try and Catch me if you can
+# TryCatchFin A OneLiner
 
 This repository contains utility functions designed to make try catch and error-handling in Deno applications a tiny notch more easier and more convenient.
 Inspired my Go.
@@ -38,7 +43,7 @@ The `tryCatch` function provides a way to execute asynchronous operations and ne
 Basic
 
 ```typescript
-import * as tcUtils from 'https://raw.githubusercontent.com/sdoerger/One-Line-Try-Catch-and-Error/main/mod.ts';
+import * as tcUtils from 'https://raw.githubusercontent.com/sdoerger/TryCatchFin-A-OneLiner/main/mod.ts';
 
 const [result, error] = await tcUtils.tryCatch(() => 5 + 5);
 tcUtils.assertError(error, 'An issue occurred');
@@ -49,7 +54,7 @@ console.log(result);
 Async
 
 ```typescript
-import * as tcUtils from 'https://raw.githubusercontent.com/sdoerger/One-Line-Try-Catch-and-Error/main/mod.ts';
+import * as tcUtils from 'https://raw.githubusercontent.com/sdoerger/TryCatchFin-A-OneLiner/main/mod.ts';
 
 
 async function fetchAnimals() {
