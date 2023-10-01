@@ -1,4 +1,4 @@
-export async function tryCatch<T>(
+export async function tryCatchFin<T>(
   func: () => Promise<T>,
   finalAction?: () => void
 ): Promise<[T | null, Error | null]> {

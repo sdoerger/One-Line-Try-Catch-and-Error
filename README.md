@@ -1,11 +1,11 @@
 <p align="center">
   <a href="https://npmjs.com/package/retonio" target="_blank" rel="noopener noreferrer">
-    <img width="400" src="https://ik.imagekit.io/vrfrbvdn0j/sddev/TryCatchFin-A-OneLiner.svg?updatedAt=1696163857267" alt="TryCatchFin A OneLiner logo">
+    <img width="400" src="https://ik.imagekit.io/vrfrbvdn0j/sddev/tryCatchFinFin-A-OneLiner.svg?updatedAt=1696163857267" alt="tryCatchFinFin A OneLiner logo">
   </a>
 </p>
 <br/>
 
-# TryCatchFin A OneLiner
+# tryCatchFinFin A OneLiner
 
 This repository contains utility functions designed to make try catch and error-handling in Deno applications a tiny notch more easier and more convenient.
 Inspired my Go.
@@ -16,7 +16,7 @@ Inspired my Go.
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
-    - [tryCatch](#trycatch)
+    - [tryCatchFin](#tryCatchFin)
       - [Example:](#example)
     - [assertError](#asserterror)
       - [Example:](#example-1)
@@ -34,18 +34,18 @@ git clone https://github.com/your-username/your-repo-name.git
 
 ## Usage
 
-### tryCatch
+### tryCatchFin
 
-The `tryCatch` function provides a way to execute asynchronous operations and neatly handle success and failure cases.
+The `tryCatchFin` function provides a way to execute asynchronous operations and neatly handle success and failure cases.
 
 #### Example:
 
 Basic
 
 ```typescript
-import * as tcUtils from 'https://raw.githubusercontent.com/sdoerger/TryCatchFin-A-OneLiner/main/mod.ts';
+import * as tcUtils from 'https://raw.githubusercontent.com/sdoerger/tryCatchFinFin-A-OneLiner/main/mod.ts';
 
-const [result, error] = await tcUtils.tryCatch(() => 5 + 5);
+const [result, error] = await tcUtils.tryCatchFin(() => 5 + 5);
 tcUtils.assertError(error, 'An issue occurred');
 
 console.log(result);
@@ -54,7 +54,7 @@ console.log(result);
 Async
 
 ```typescript
-import * as tcUtils from 'https://raw.githubusercontent.com/sdoerger/TryCatchFin-A-OneLiner/main/mod.ts';
+import * as tcUtils from 'https://raw.githubusercontent.com/sdoerger/tryCatchFinFin-A-OneLiner/main/mod.ts';
 
 
 async function fetchAnimals() {
@@ -68,7 +68,7 @@ async function fetchAnimals() {
     return await response.json();
 };
 
-const [result, error] = await tcUtils.tryCatch(fetchAnimals);
+const [result, error] = await tcUtils.tryCatchFin(fetchAnimals);
 tcUtils.assertError(error, 'An issue occurred');
 
 console.log(result);
