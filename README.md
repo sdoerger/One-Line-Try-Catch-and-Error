@@ -5,7 +5,7 @@
 </p>
 <br/>
 
-# tryCatchFinFin A OneLiner
+# tryCatchFin A OneLiner
 
 This repository contains utility functions designed to make try catch and error-handling in Deno applications a tiny notch more easier and more convenient.
 Inspired my Go.
