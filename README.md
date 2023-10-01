@@ -1,4 +1,4 @@
-<image src="https://cdn.midjourney.com/ba8ffbc1-2ea1-4ead-9d2f-337d23c2c037/0_0.png" width="400" height="400"
+<image src="https://cdn.midjourney.com/ba8ffbc1-2ea1-4ead-9d2f-337d23c2c037/0_0.png" width="400" height="400" />
 
 # Try and Catch me if you can
 
