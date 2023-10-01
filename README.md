@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://npmjs.com/package/retonio" target="_blank" rel="noopener noreferrer">
-    <img width="400" src="https://ik.imagekit.io/vrfrbvdn0j/sddev/tryCatchFinFin-A-OneLiner.svg?updatedAt=1696163857267" alt="tryCatchFinFin A OneLiner logo">
+    <img width="400" src="https://ik.imagekit.io/vrfrbvdn0j/sddev/TryCatchFin-A-OneLiner.svg?updatedAt=1696163857267" alt="tryCatchFinFin A OneLiner logo">
   </a>
 </p>
 <br/>
