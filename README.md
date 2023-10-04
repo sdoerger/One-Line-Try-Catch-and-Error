@@ -43,7 +43,7 @@ The `tryCatchFin` function provides a way to execute asynchronous operations and
 Basic
 
 ```typescript
-import * as tcUtils from 'https://raw.githubusercontent.com/sdoerger/tryCatchFinFin-A-OneLiner/main/mod.ts';
+import * as tcUtils from 'https://raw.githubusercontent.com/sdoerger/tryCatchFin-A-OneLiner/main/mod.ts';
 
 const [result, error] = await tcUtils.tryCatchFin(() => 5 + 5);
 tcUtils.assertError(error, 'An issue occurred');
