@@ -56,7 +56,6 @@ Async
 ```typescript
 import * as tcUtils from 'https://raw.githubusercontent.com/sdoerger/tryCatchFinFin-A-OneLiner/main/mod.ts';
 
-
 async function fetchAnimals() {
     const response = await fetch(
         "https://api.publicapis.org/entries?category=Animals",
